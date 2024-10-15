@@ -102,7 +102,8 @@ below the large *Sumbit* button.
 That should bring you to the *Anaconda Installers* download page which should have automatically detected your operating system.
 Just click the download icon
 ![Download](images/Picture1.png).
-At the time of this writing, the latest version is Anaconda 2024.06.1 using Python 3.12.
+At the time of this writing, the latest version is Anaconda 2024.06.1 using Python 3.12. If a previous
+version of Anaconda is needed, it can be found in the [archive](https://repo.anaconda.com/archive/).
 
 ![Anaconda Installers](images/anacondaInstallers.png)
 
@@ -111,6 +112,24 @@ There will be a few installation steps to click through - you can generally use 
 - [Windows computers](https://docs.anaconda.com/free/anaconda/install/windows/)
 - [MacOS](https://docs.anaconda.com/free/anaconda/install/mac-os/)
 - [Linux](https://docs.anaconda.com/free/anaconda/install/linux/)
+
+## Installing and enabling the optional RISE extension
+At the time of writing, the rise jupyter extension was not compatible with the base anaconda environment.
+To enable RISE, one needs to create a virtual environment as follows:
+1) Open a terminal using *Anaconda Powershell Prompt* in the Windows search bar, or the equivalent on MacOS
+2) In the terminal enter the following:
+	```bash
+	conda create -y -n rise
+	conda activate rise
+	conda install -y -c conda-forge rise
+	```
+3) Launch *jupyter Noteboook* from this environment:
+   	```bash
+    	jupyter notebook
+	```
+   Alternatively, you can use *Anaconda Navigator* to launch *jupyter*. If you choose to do so,
+   first select the `rise` environment in the dropdown menu at the top of the application, and **before**
+   clicking on the *jupyter Notebook* launch box.
 
 ### Upgrade
 
@@ -124,6 +143,12 @@ located in you home directory before proceeding with a fresh install.
 If you would rather prefer to keep your existing Python installation,
 you can certainly do that, with the caveat that you might experience compatibility issues.
 
+To upgrade an existing installation from the command line, use the following commands from a terminal
+having the proper anaconda environment (base):
+```bash
+conda update conda
+conda update --all
+```
 
 ## Testing your Anaconda installation
 
@@ -133,9 +158,11 @@ and Linux – more details below) and just type:
 
 `conda info`
 
-Make sure that the terminal was opened through the Anaconda Navigator - this ensures
+Make sure that the terminal was launched through the Anaconda Navigator. or through
+calling `Anaconda Powershell Prompt` - this ensures
 that the proper environment variables are configured. A simple terminal would not
-have `conda` in its PATH.
+have `conda` in its PATH. A properly configured terminal should have a *(base)* in front
+of the command prompt.
 
 You should then get something like this:
 
