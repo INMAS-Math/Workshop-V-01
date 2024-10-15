@@ -127,8 +127,8 @@ To enable RISE, one needs to create a virtual environment as follows:
    	```bash
     	jupyter notebook
 	```
-   Alternatively, you can use *Anaconda Navigator* to launch *jupyter*. If you choose to do so,
-   first select the `rise` environment in the dropdown menu at the top of the application, and **before**
+   Alternatively, you can use *Anaconda Navigator* to launch *Jupyter*. If you choose to do so,
+   first select the *rise* environment in the dropdown menu at the top of the application **before**
    clicking on the *jupyter Notebook* launch box.
 
 ### Upgrade
@@ -162,7 +162,8 @@ Make sure that the terminal was launched through the Anaconda Navigator. or thro
 calling `Anaconda Powershell Prompt` - this ensures
 that the proper environment variables are configured. A simple terminal would not
 have `conda` in its PATH. A properly configured terminal should have a *(base)* in front
-of the command prompt.
+of the command prompt. If you enabled the *rise* environment, you should have a
+*(rise)* in front of the command prompt.
 
 You should then get something like this:
 
@@ -218,6 +219,8 @@ Click on the code icon to get a zip file containing all the material. Alternativ
 
 `git download https://github.com/INMAS-Math/Workshop-V-01.git`
 
+** Do not download files individually as you need anciliary directories for code and images.**
+
 Note that if you were a contributor to the code, you would use `clone` instead of download. This would transfer all the metadata to your computer and allow you to push changes that you make to the code. 
 
 If not already present on your computer, the `git` source code management tool (SCM) can be downloaded and installed from [git-scm.com](https://git-scm.com).
@@ -225,6 +228,8 @@ If not already present on your computer, the `git` source code management tool (
 ## Opening and running a Jupyter notebook
 
 Start the anaconda navigator and launch the Jupyter Notebook interpreter by clicking on the Launch button of the icon shown here.
+If you are using the RISE extension from the `rise` environment, make sure to first select the *rise* environment from the dropdown menu
+**before** launching Jupyter.
 
 ![Notebook](images/Picture6.png)
 
