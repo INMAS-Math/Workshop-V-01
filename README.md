@@ -114,7 +114,7 @@ There will be a few installation steps to click through - you can generally use 
 
 ### Upgrade
 
-If you already have a version of Anaconda installed, it is recommended that you upgrade it to the latest version.
+If you already have a version of Anaconda installed, it is recommended that you upgrade to the latest version.
 The simplest way to update is to uninstall your current version of Anaconda and start with a fresh install
 as described above, as updating using conda will not update your version of Python but rather will require
 the creation of a whole new environment based on the newer Python version.
@@ -132,6 +132,10 @@ First, open a terminal (shell) window (anaconda Prompt on Windows, Terminal on M
 and Linux – more details below) and just type:
 
 `conda info`
+
+Make sure that the terminal was opened through the Anaconda Navigator - this ensures
+that the proper environment variables are configured. A simple terminal would not
+have `conda` in its PATH.
 
 You should then get something like this:
 
