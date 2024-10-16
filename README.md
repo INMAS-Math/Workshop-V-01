@@ -121,7 +121,7 @@ To enable RISE, one needs to create a virtual environment as follows:
 	```bash
 	conda create -y -n rise
 	conda activate rise
-	conda install -y -c conda-forge rise numpy scipy seaborn matplotlib pandas yfinance
+	conda install -y -c conda-forge rise numpy scipy seaborn matplotlib pandas yfinance openai
 	```
 3) Launch *jupyter Noteboook* from this environment:
    	```bash
