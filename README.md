@@ -206,17 +206,18 @@ The navigator can be used to start many applications. Those of interest to us ar
 
 ## Downloading the notebooks
 
-The notebooks for the Workshop are available from github (right where you now are :-). You can download the material for the workshop at:
+The notebooks for the Workshop are available from github (right where you now are :-). You can download the material by:
 
-[https://github.com/INMAS-Math/Workshop-V-01.git](https://github.com/INMAS-Math/Workshop-V-01.git)
-
-Click on the code icon to get a zip file containing all the material. Alternatively, you can use a command line and `git` to download the code as follows:
-
-`git download https://github.com/INMAS-Math/Workshop-V-01.git`
+- Clicking on the green *Code* icon at the top of the page or [here](https://github.com/INMAS-Math/Workshop-V-01/archive/refs/heads/main.zip)
+to get a zip file containing all the material required for the workshop. Unzip its content in a new and empty directory called, say, *Workshop-V-01*.
+- Alternatively, you can use a terminal and the command line and `git` to download the code as follows:
+	```bash
+	git download https://github.com/INMAS-Math/Workshop-V-01.git
+	```
 
 **Do not download files individually as you need anciliary directories for code and images.**
 
-Note that if you were a contributor to the code, you would use `clone` instead of download. This would transfer all the metadata to your computer and allow you to push changes that you make to the code. 
+Note that if you were a contributor to the code, you would use `clone` instead of download. This would transfer all the metadata to your computer and allow you to `push` changes that you make to the code. 
 
 If not already present on your computer, the `git` source code management tool (SCM) can be downloaded and installed from [git-scm.com](https://git-scm.com).
 
