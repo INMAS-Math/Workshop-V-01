@@ -125,7 +125,7 @@ To enable RISE, one needs to create a virtual environment as follows:
 	```
 3) Launch *jupyter Noteboook* from this environment:
    	```bash
-    	jupyter notebook
+	jupyter notebook
 	```
    Alternatively, you can use *Anaconda Navigator* to launch *Jupyter*. If you choose to do so,
    first select the *rise* environment in the dropdown menu at the top of the application **before**
