@@ -214,7 +214,7 @@ Click on the code icon to get a zip file containing all the material. Alternativ
 
 `git download https://github.com/INMAS-Math/Workshop-V-01.git`
 
-** Do not download files individually as you need anciliary directories for code and images.**
+**Do not download files individually as you need anciliary directories for code and images.**
 
 Note that if you were a contributor to the code, you would use `clone` instead of download. This would transfer all the metadata to your computer and allow you to push changes that you make to the code. 
 
