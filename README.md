@@ -113,7 +113,21 @@ There will be a few installation steps to click through - you can generally use 
 - [MacOS](https://docs.anaconda.com/free/anaconda/install/mac-os/)
 - [Linux](https://docs.anaconda.com/free/anaconda/install/linux/)
 
-## Installing and enabling the optional RISE extension
+
+### Upgrade
+
+If you already have a version of Anaconda installed, then it is recommended that you upgrade to the latest version. 
+- The simplest way to update is to uninstall your current version of Anaconda and start with a fresh install as described above.
+On Windows, uninstall the Anaconda application. On MacOS and Linux you can use anaconda-clean, or (not recommended) delete the entire anaconda3 directory located in your home directory before proceeding with a fresh install. 
+- Alternatively, you may keep your existing Python installation, with the caveat that you might experience compatibility issues.
+If you are willing to take that risk, then you may upgrade an existing installation from the command line, using the following commands from a terminal having the proper anaconda environment (base):
+	```bash
+	conda update conda
+	conda update --all
+	```
+
+### Installing and enabling the optional RISE extension
+
 At the time of writing, the rise jupyter extension was not compatible with the base anaconda environment.
 To enable RISE, one needs to create a virtual environment as follows:
 1) Open a terminal using *Anaconda Powershell Prompt* in the Windows search bar, or the equivalent on MacOS
@@ -123,7 +137,7 @@ To enable RISE, one needs to create a virtual environment as follows:
 	conda activate rise
 	conda install -y -c conda-forge rise numpy scipy seaborn matplotlib pandas
 	```
-3) Launch *jupyter Noteboook* from this environment:
+3) Launch *jupyter Notebook* from this environment:
    	```bash
 	jupyter notebook
 	```
@@ -131,16 +145,7 @@ To enable RISE, one needs to create a virtual environment as follows:
    first select the *rise* environment in the dropdown menu at the top of the application **before**
    clicking on the *jupyter Notebook* launch box.
 
-### Upgrade
-If you already have a version of Anaconda installed, then it is recommended that you upgrade to the latest version. 
-- The simplest way to update is to uninstall your current version of Anaconda and start with a fresh install as described above. On Windows, uninstall the Anaconda application. On MacOS and Linux you can use anaconda-clean, or (not recommended) delete the entire anaconda3 directory located in your home directory before proceeding with a fresh install. 
-- Alternatively, you may keep your existing Python installation, with the caveat that you might experience compatibility issues. If you are willing to take that risk, then you may upgrade an existing installation from the command line, using the following commands from a terminal having the proper anaconda environment (base):
-	```bash
-	conda update conda
-	conda update --all
-	```
-
-## Testing your Anaconda installation
+### Testing your Anaconda installation
 
 Checking the version of Anaconda and Python is relatively simple.
 First, open a terminal (shell) window (anaconda Prompt on Windows, Terminal on MacOS
