@@ -132,23 +132,13 @@ To enable RISE, one needs to create a virtual environment as follows:
    clicking on the *jupyter Notebook* launch box.
 
 ### Upgrade
-
-If you already have a version of Anaconda installed, it is recommended that you upgrade to the latest version.
-The simplest way to update is to uninstall your current version of Anaconda and start with a fresh install
-as described above, as updating using conda will not update your version of Python but rather will require
-the creation of a whole new environment based on the newer Python version.
-On Windows, uninstall the Anaconda application.
-On MacOS and Linux you can use anaconda-clean, or (not recommended) delete the entire anaconda3 directory
-located in you home directory before proceeding with a fresh install.
-If you would rather prefer to keep your existing Python installation,
-you can certainly do that, with the caveat that you might experience compatibility issues.
-
-To upgrade an existing installation from the command line, use the following commands from a terminal
-having the proper anaconda environment (base):
-```bash
-conda update conda
-conda update --all
-```
+If you already have a version of Anaconda installed, then it is recommended that you upgrade to the latest version. 
+- The simplest way to update is to uninstall your current version of Anaconda and start with a fresh install as described above. On Windows, uninstall the Anaconda application. On MacOS and Linux you can use anaconda-clean, or (not recommended) delete the entire anaconda3 directory located in your home directory before proceeding with a fresh install. 
+- Alternatively, you may keep your existing Python installation, with the caveat that you might experience compatibility issues. If you are willing to take that risk, then you may upgrade an existing installation from the command line, using the following commands from a terminal having the proper anaconda environment (base):
+	```bash
+	conda update conda
+	conda update --all
+	```
 
 ## Testing your Anaconda installation
 
