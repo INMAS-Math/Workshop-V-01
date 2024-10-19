@@ -1,5 +1,7 @@
 
-Fles in this folder are used by the following notebooks:
-- Notebook 04 - Input/Output
-- Notebooks 09 and 10 - Numpy
+Files in this folder are used by the following notebooks:
+- Notebook 8 - Input/Output
+- Notebooks 15, 16 - Numpy
+- Notebook 19 - Pandas
+
 
